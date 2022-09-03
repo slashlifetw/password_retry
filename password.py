@@ -7,7 +7,7 @@
 
 password = 'a123456'
 remaining_times = 3
-while True:
+while remaining_times > 0:
     enter_password = input('請輸入密碼')
     if enter_password == password:
         print('登入成功!')
@@ -18,5 +18,5 @@ while True:
             print('密碼錯誤! 還有', remaining_times, '次機會')
         elif remaining_times == 0:
             print('密碼錯誤! 已輸入3次，請聯繫電腦管理員!')
-            break
+
 
